@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css"> 
+</head>
+
+<body>   
+<form id="form" action="/action_page.php" novalidate="novalidate">
+
+    <div class="overflow-hidden"></div>
+            <div class="multisteps-form"></div>
+            <div class="row"></div>
+                <div class="multisteps-form__progress">
+                    <button class="multisteps-form__progress-btn js-active" type="button" title="User Info">User Info</button>
+                    <button class="multisteps-form__progress-btn" type="button" title="Address">Business Info</button>
+                    <button class="multisteps-form__progress-btn" type="button" title="Address">Complete</button>
+                </div>
+                
+<!--!Account Registration--> 
+    <div class="container">
+
+        <h2>Create your account</h2>
+        <P>Already have an account? <a href="#">Sign in.</a></P><br>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username"required><br><br>
+        
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email"required><br><br>
+        
+        <label for="password">Password</label>
+        <input pattern="" type="text" id="password" name="password"required><br><br>
+        
+        <label for="confirm-password">Confirm Password</label>
+        <input pattern="" type="text" id="confirm-password" name="confirm-password"required><br><br><br>
+
+        <input type="checkbox" name=" terms-and-conditions" value=" terms-and-conditions" > I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a><br><br><br>
+
+        
+        <button class="create-my-account" type="button">Create my account</button>
+    </div>
+
+<!--!What Is a Entity Conversion?-->
+    <div class="container">
+        <h2>Business Licenses and Permits</h2>
+        <p> If you need to obtain a permit or license to start operating your business, let us help. If you aren't sure what you need we can help you with that to. 
+            <br><br>
+        <button href="#"class="start-my-application" type="button">Start My Application</button>
+    </div>
+
+<!--!Contact Information-->
+    <div class="container">
+        <h2>Contact Information</h2>
+        <p>Primary contact for your business.</p>
+
+        <label for="first-name">First name</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+            
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name" name="last-name"required><br><br>
+            
+        <label for="email">Please enter your email address</label>
+        <input type="text" id="email" name="email"required><br><br>
+            
+        <label for="email">Please re-enter your email address</label>
+        <input type="text" id="email" name="email"required><br><br>
+            
+        <label for="phone">Please enter your phone number (optional)</label>
+        <input type="tel" placeholder="(xxx)-xxx-xxxx" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="9" maxlength=""><br><br>
+            
+        <label for="phone">Please verify your phone number (optional)</label>
+        <input type="tel" placeholder="(xxx)-xxx-xxxx" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="9" maxlength="9"><br><br>
+
+        
+        <button class="next-btn next-btn1" type="button">Next</button>
+    </div>
+
+<!--!Company Information-->
+    <div  class="container"> 
+        <h2>Company Information</h2>
+        <p>Please enter the company name EXACTLY as it appears on your Articles. Also, select the entity type of the company, state of formation, and the date of your formation.</p>
+        <label for="company-name">Company Name</label>
+        <input type="text" id="company-name" name="company-name" required><br><br>
+        <label for="date">Date Of Formation (approximate)</label>
+        <input id="date" name="date" type="text" pattern="[0-9]" minlength="8" maxlength="8"><br><br>
+
+        <label for="business-entity-type">Select Your Business Entity Type</label>
+        <select class="drop-down" name="business-entity-type"required>
+            <option value="">select an option</option>
+            <option value="inc">Inc.</option>
+            <option value="co">Co.</option>
+            <option value="corp">Corp.</option>
+            <option value="ltd">Ltd.</option>
+            <option value="incorporated">Incorporated</option>
+            <option value="company">Company</option>
+            <option value="corporation">Corporation</option>
+            <option value="limited">Limited</option>
+            <option value="p-c">P.C.</option>
+            <option value="professional-corporation">Professional Corporation</option>
+        </select><br><br>
+
+        <label for="state">State</label>
+        <select class="drop-down" name="state"required>
+                <option value="">select an option</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select><br><br>
+        <button class="back-btn back-btn1" type="button">Back</button>
+        <button class="next-btn next-btn1" type="button">Next</button>
+    </div>
+
+        
+
+<!--!Principal Place of Business-->
+    <div class="container">
+        <h2>Principal Place of Business</h2>
+        <p>Enter the physical address of your company including the suite number if applicable. The company address can be anywhere in the U.S. but it cannot be a P.O Box. If you run a home based business, you may enter your home address.</p>
+                
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required><br><br>
+            
+        <label for="unit">Apt, suite, unit, etc</label>
+        <input type="text" id="unit" name="unit"><br><br>
+            
+        <label for="city">City</label>
+        <input type="text" id="city" name="city"required><br><br>
+
+        <label for="state">State</label>
+        <select class="drop-down" name="state"required>
+                <option value="">select an option</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select><br><br>
+
+        <label for="zip">Zip</label>
+        <input id="zip" name="zip" type="text" pattern="[0-9]" minlength="5" maxlength="5" required><br><br>
+
+        <label><input id="myCheck" class="myCheck" input type="checkbox"  onclick="myFunction()" required><span class="no-wrap">Mailing address is different?</span></label><br><br><br>
+
+    <!--Mailing  Address (No P.O Box address)-->
+    <div id="div3">
+        <h2>Mailing Address</h2>
+        <p>Enter the mailing address including the suite number if applicable. The mailing address can be anywhere in the U.S. If you run a home based business, you may enter your home address.</p>
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address"><br><br>
+            
+        <label for="unit">Apt, suite, unit, etc</label>
+        <input type="text" id="unit" name="unit"><br><br>
+            
+        <label for="city">City</label>
+        <input type="text" id="city" name="city"><br><br>
+            
+        <label for="state">State</label>
+        <select class="drop-down" name="state">
+                <option value="">select an option</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select><br><br>
+        <label for="zip">&nbsp;&nbsp;Zip</label>
+        <input id="zip" name="zip" type="text" pattern="[0-9]" min-length="5" maxlength="5"><br><br>
+    </div>
+    
+    <button class="back-btn back-btn1" type="button">Back</button>
+    <button class="next-btn next-btn1" type="button">Next</button>
+    </div>
+
+
+<!--!Business Licenses and Permits-->
+        
+<div  class="container">
+        <h2>Business Licenses and Permits</h2>
+                <p>Please provide a brief description about your business in order to better help us provide the most in-depth research.</p>
+        
+                <label for="select-your-type-of-conversion">Choose Your Business Category</label>
+                <select class="drop-down" name="business-category" required>
+                    <option value="">select an option</option>
+                    <option value="accommodation">Accommodation</option>
+                    <option value="construction">Construction</option>
+                    <option value="consulting">Consulting</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="finance">Finance</option>
+                    <option value="food-services">Food Services</option>
+                    <option value="health-care">Health Care</option>
+                    <option value="insurance">Insurance</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="professional">Professional</option>
+                    <option value="retail">Retail</option>
+                    <option value="real-estate">Real Estate</option>
+                    <option value="rental-and-leasing">Rental And Leasing</option>
+                    <option value="transportation">Transportation</option>
+                    <option value="social-assistance">Social Assistance</option>
+                    <option value="wholesale">Wholesale</option>
+                    <option value="technology">Technology </option>
+                    <option value="warehousing">Warehousing </option>
+                    <option value="other">Other</option>
+
+                </select><br><br>
+        
+                <label for="story">Brief Business Description</label>
+                Example: Operate a Jet ski rental service.
+                <textarea id="story" data-gramm="false" name="story"rows="5" cols="33" required></textarea><br><br>
+        
+                <button class="back-btn back-btn1" type="button">Back</button>
+                <button class="next-btn next-btn1" type="button">Next</button>
+            </div>
+
+<!--!Recipient Information-->
+<div  class="container">          
+            <h2>Recipient Information</h2>
+
+            <label for="recipient-name">Recipient Name</label>
+            <input type="text" id="recipient-name" name="recipient-name" placeholder="Full Name" required><br><br>
+            
+            <label for="email-address">Email Address</label>
+            <input type="text" id="email-address" name="email-address" required><br><br>
+
+            <label for="confirm-email-address">Confirm Email Address</label>
+            <input type="text" id="confirm-email-address" name="confirm-email-address" required><br><br>
+
+            <label for="telephone-number">Telephone Number (optional)</label>
+            <input type="text" id="telephone-number" name="telephone-number" required><br><br>
+
+            <button class="submit-application" type="button">Proceed to Checkout</button>
+            <p style="text-align: center;">By submitting your application you agree to our <br> <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a></p>
+</div>
+
+</form>
+
+
+<!--!script.js-->       
+    <script src="js/form.js"></script>
+</body>
+</html>
