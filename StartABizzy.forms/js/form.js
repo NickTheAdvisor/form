@@ -25,7 +25,7 @@ if (number.length > 6) {
     new_number = number;
     }
     
-    // if value is heigher than 12, last number is dropped
+    // if value is higher than 12, last number is dropped
     // if inserting a number before the last character, numbers
     // are shifted right, only 12 characters will show
     ele.value =  (new_number.length > 12) ? new_number.substring(12,0) : new_number;
@@ -151,10 +151,9 @@ const DOMstrings = {
   stepFormPanels: document.querySelectorAll('.multisteps-form__panel'),
   stepPrevBtnClass: 'js-btn-prev',
   stepNextBtnClass: 'js-btn-next' };
- 
- 
+
 const removeClasses = (elemSet, className) => {
- 
+
   elemSet.forEach(elem => {
 
     elem.classList.remove(className);
@@ -211,93 +210,93 @@ const getActivePanel = () => {
 };
 
 const setActivePanel = activePanelNum => {
- 
+
   removeClasses(DOMstrings.stepFormPanels, 'js-active');
- 
+
   DOMstrings.stepFormPanels.forEach((elem, index) => {
     if (index === activePanelNum) {
- 
+
       elem.classList.add('js-active');
- 
+
       setFormHeight(elem);
- 
+
     }
   });
- 
+
 };
- 
+
 const formHeight = activePanel => {
- 
+
   const activePanelHeight = activePanel.offsetHeight;
- 
+
   DOMstrings.stepsForm.style.height = `${activePanelHeight}px`;
- 
+
 };
- 
+
 const setFormHeight = () => {
   const activePanel = getActivePanel();
- 
+
   formHeight(activePanel);
 };
- 
+
 DOMstrings.stepsBar.addEventListener('click', e => {
- 
+
   const eventTarget = e.target;
- 
+
   if (!eventTarget.classList.contains(`${DOMstrings.stepsBtnClass}`)) {
     return;
   }
- 
+
   const activeStep = getActiveStep(eventTarget);
- 
+
   setActiveStep(activeStep);
- 
+
   setActivePanel(activeStep);
 });
- 
+
 DOMstrings.stepsForm.addEventListener('click', e => {
- 
+
   const eventTarget = e.target;
- 
+
   if (!(eventTarget.classList.contains(`${DOMstrings.stepPrevBtnClass}`) || eventTarget.classList.contains(`${DOMstrings.stepNextBtnClass}`)))
   {
     return;
   }
- 
+
   const activePanel = findParent(eventTarget, `${DOMstrings.stepFormPanelClass}`);
- 
+
   let activePanelNum = Array.from(DOMstrings.stepFormPanels).indexOf(activePanel);
- 
+
   if (eventTarget.classList.contains(`${DOMstrings.stepPrevBtnClass}`)) {
     activePanelNum--;
- 
+
   } else {
- 
+
     activePanelNum++;
- 
+
   }
- 
+
   setActiveStep(activePanelNum);
   setActivePanel(activePanelNum);
- 
+
 });
- 
+
 window.addEventListener('load', setFormHeight, false);
- 
+
 window.addEventListener('resize', setFormHeight, false);
- 
- 
+
+
 const setAnimationType = newType => {
   DOMstrings.stepFormPanels.forEach(elem => {
     elem.dataset.animation = newType;
   });
 };
- 
+
 //changing animation
 const animationSelect = document.querySelector('.pick-animation__select');
- 
+
 animationSelect.addEventListener('change', () => {
   const newAnimationType = animationSelect.value;
- 
+
   setAnimationType(newAnimationType);
 });
