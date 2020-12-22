@@ -78,10 +78,10 @@
         <button class="next-btn next-btn1" type="button">Next</button>
     </div>
 
-<!--!Company Name-->
+<!--!Company Information-->
     <div  class="container"> 
-        <h2>Company Name</h2>
-        <p>What is the name of the company? The state requires the legal name of a company to be unique from other businesses who are registered within the same state. The business name you provide will be researched by one of our agents to ensure that it is available.</p>
+        <h2>Company Information</h2>
+        <p>Please enter the company name EXACTLY as it appears on your Articles. Also, select the entity type of the company, state of formation, and the date of your formation.</p>
 
         <label for="company-name">Company Name</label>
         <input type="text" id="company-name" name="company-name" required><br><br>
@@ -157,14 +157,20 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
     </select><br><br>     
+    
+    <label for="foreign-entity">Is This A Foreign Entity?</label>
+        <select class="drop-down" name="foreign-entity"required>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select><br><br><br><br>
 
         <button class="back-btn back-btn1" type="button">Back</button>
         <button class="next-btn next-btn1" type="button">Next</button>
     </div>
 
-<!--!Principal Place of Business-->
+<!--!Business Address-->
     <div class="container">
-        <h2>Principal Place of Business</h2>
+        <h2>Business Address</h2>
         <p>Enter the physical address of your company including the suite number if applicable. The company address can be anywhere in the U.S. but it cannot be a P.O Box. If you run a home based business, you may enter your home address.</p>
                 
         <label for="address">Address</label>
