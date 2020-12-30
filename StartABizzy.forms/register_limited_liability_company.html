@@ -78,75 +78,77 @@
     </div>
 
 <!--!Company Name-->
-    <div class="container">
-        <h2>Company Name</h2>
-        <p>What is the name of the company? The state requires the legal name of a company to be unique from other businesses who are registered within the same state. The business name you provide will be researched by one of our agents to ensure that it is available.</p>
+<div class="container">
+    <h2>Company Name</h2>
+    <p>What is the name of the company? The state requires the legal name of a company to be unique from other businesses who are registered within the same state. The business name you provide will be researched by one of our agents to ensure that it is available.</p><br>
 
-        <label for="company-name">Preferred Company Name</label>
-        <input type="text" id="company-name" name="company-name" required><br><br>
-                
-        <label for="company-name">Alternate Company Name</label>
-        <input type="text" id="company-name" name="company-name"><br><br>
+    <label for="company-name">Preferred Company Name</label>
+    <input type="text" id="company-name" name="company-name" required><br><br>
+            
+    <label for="company-name">Alternate Company Name</label>
+    <input type="text" id="company-name" name="company-name"><br><br>
 
-        <label for="company-name">Alternate Company Name</label>
-        <input type="text" id="company-name" name="company-name"><br><br>
+    <label for="company-name">Alternate Company Name</label>
+    <input type="text" id="company-name" name="company-name"><br><br>
 
-        <label for="business-entity-type">Select Your Business Entity Type</label>
-        <select class="drop-down" name="business-entity-type"required>
-            <option value="">select an option</option>
-            <option value="llc">LLC</option>
-            <option value="L.L.C">L.L.C</option>
-            <option value="LC">LC</option>
-            <option value="L.C.">L.C.</option>
-            <option value="Ltd. Co.">Ltd. Co.</option>
-            <option value="Ltd. company">Ltd. Company</option>
-            <option value="Ltd. Liability Co.">Ltd. Liability Co.</option>
-            <option value="Ltd. Liability Company">Ltd. Liability Company</option>
-            <option value="Limited Co.">Limited Co.</option>
-            <option value="Limited Company">Limited Company</option>
-            <option value="Limited Liability Co.">Limited Liability Co.</option>
-            <option value="Limited liability Company">Limited liability Company</option>
-            <option value="PLLC">PLLC</option>
-            <option value="P.L.L.C.">P.L.L.C.</option>
-            <option value="Professional LLC">Professional LLC</option>
-            <option value="Professional L.L.C">Professional L.L.C</option>
-            <option value="Professional Limited Liability Company ">Professional Limited Liability Company </option>
-        </select><br><br>
+    <label for="business-entity-type">Select Your Business Entity Type</label>
+    <select class="drop-down" name="business-entity-type"required>
+        <option value="">select an option</option>
+        <option value="inc">Inc.</option>
+        <option value="co">Co.</option>
+        <option value="corp">Corp.</option>
+        <option value="ltd">Ltd.</option>
+        <option value="incorporated">Incorporated</option>
+        <option value="company">Company</option>
+        <option value="corporation">Corporation</option>
+        <option value="limited">Limited</option>
+        <option value="p-c">P.C.</option>
+        <option value="professional-corporation">Professional Corporation</option><br>
+    </select><br><br>
 
-        <label for="business-category">Choose Your Business Category</label>
-        <select class="drop-down" name="business-category" required>
-            <option value="">select an option</option>
-            <option value="accommodation-food-service">Accommodation/Food Service</option>
-            <option value="rental-leasing">Rental Leasing</option>
-            <option value="warehouse">Warehouse</option>
-            <option value="construction">Construction</option>
-            <option value="finances">Finances</option>
-            <option value="food-services">Food Services</option>
-            <option value="health-care">Health Care</option>
-            <option value="insurance">Insurance</option>
-            <option value="manufacturing">Manufacturing</option>
-            <option value="retail">Retail</option>
-            <option value="real-estate">Real Estate</option>
-            <option value="transportation">Transportation</option>
-            <option value="wholesale-agent-broker">Wholesale/Agent/Broker</option>
-            <option value="wholesale-other">Wholesale/Other</option>
-            <option value="other">Other</option>
-        </select><br><br><br> 
+    <button class="back-btn back-btn1" type="button">Back</button>
+    <button class="next-btn next-btn1" type="button">Next</button>
+</div>
 
-        <label for="story">Business Purpose</label>
-        <p><i>Example: Frozen yogurt shop. </i></p>
-        <textarea id="story" data-gramm="false" name="story"rows="5" cols="33" required></textarea><br><br>
+<!--!Business Information-->
+<div class="container">
+<h2>Business Information</h2>
+<p>Choose the category below that best describes your business. If the categories provided do not describe your business, please select "Other". Then enter your own description in the box provided. Your answers will help us personalize your state formation documents.</p><br>
 
-        <label for="story">If other, please describe your primary business activity</label>
-        <textarea id="story" data-gramm="false" name="story"rows="5" cols="33"></textarea>
-        
-        <p>Is this a subsidiary of another company? (A subsidiary is a company owned and controlled by another company.)</p>
-        <input type="radio" name="yes_no">Yes </input><br><br>
-        <input type="radio" name="yes_no">No </input><br><br><br>
+    <label for="business-category">Choose Your Business Category</label>
+    <select class="drop-down" name="business-category" required>
+        <option value="">select an option</option>
+        <option value="accommodation-food-service">Accommodation/Food Service</option>
+        <option value="rental-leasing">Rental Leasing</option>
+        <option value="warehouse">Warehouse</option>
+        <option value="construction">Construction</option>
+        <option value="finances">Finances</option>
+        <option value="food-services">Food Services</option>
+        <option value="health-care">Health Care</option>
+        <option value="insurance">Insurance</option>
+        <option value="manufacturing">Manufacturing</option>
+        <option value="retail">Retail</option>
+        <option value="real-estate">Real Estate</option>
+        <option value="transportation">Transportation</option>
+        <option value="wholesale-agent-broker">Wholesale/Agent/Broker</option>
+        <option value="wholesale-other">Wholesale/Other</option>
+        <option value="other">Other</option>
+    </select><br><br><br> 
 
-        <button class="back-btn back-btn1" type="button">Back</button>
-        <button class="next-btn next-btn1" type="button">Next</button>
-    </div>
+    <label for="story">Business Purpose</label>
+    <p><i>Example: Frozen yogurt shop.</i></p>
+    <textarea id="story" data-gramm="false" name="story"rows="5" cols="33" required></textarea><br><br>
+
+    <label for="story">If other, please describe your primary business activity</label>
+    <textarea id="story" data-gramm="false" name="story"rows="5" cols="33"></textarea>
+    
+    <p>Is this a subsidiary of another company? (A subsidiary is a company owned and controlled by another company.)</p>
+    <input type="radio" name="yes_no">Yes </input><br><br>
+    <input type="radio" name="yes_no">No </input><br><br><br>
+
+    <button class="back-btn back-btn1" type="button">Back</button>
+    <button class="next-btn next-btn1" type="button">Next</button>
+</div>
 
 <!--!Principal Place of Business-->
     <div class="container">

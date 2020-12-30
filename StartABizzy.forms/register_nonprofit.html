@@ -78,54 +78,105 @@
         
         <button class="next-btn next-btn1" type="button">Next</button>
     </div>
+    <!--!Company Name-->
+<div class="container">
+    <h2>Company Name</h2>
+    <p>What is the name of the company? The state requires the legal name of a company to be unique from other businesses who are registered within the same state. The business name you provide will be researched by one of our agents to ensure that it is available.</p><br>
 
-<!--!Company Name-->
-    <div class="container">
-        <h2>Company Name</h2>
-        <p>What is the name of the company? The state requires the legal name of a company to be unique from other businesses who are registered within the same state. The business name you provide will be researched by one of our agents to ensure that it is available.</p>
+    <label for="company-name">Preferred Company Name</label>
+    <input type="text" id="company-name" name="company-name" required><br><br>
+            
+    <label for="company-name">Alternate Company Name</label>
+    <input type="text" id="company-name" name="company-name"><br><br>
 
-        <label for="company-name">Preferred Company Name</label>
-        <input type="text" id="company-name" name="company-name" required><br><br>
-                
-        <label for="company-name">Alternate Company Name</label>
-        <input type="text" id="company-name" name="company-name"><br><br>
+    <label for="company-name">Alternate Company Name</label>
+    <input type="text" id="company-name" name="company-name"><br><br>
 
-        <label for="company-name">Alternate Company Name</label>
-        <input type="text" id="company-name" name="company-name"><br><br>
+    <label for="business-entity-type">Select Your Business Entity Type</label>
+    <select class="drop-down" name="business-entity-type"required>
+        <option value="">select an option</option>
+        <option value="inc">Inc.</option>
+        <option value="co">Co.</option>
+        <option value="corp">Corp.</option>
+        <option value="ltd">Ltd.</option>
+        <option value="incorporated">Incorporated</option>
+        <option value="company">Company</option>
+        <option value="corporation">Corporation</option>
+        <option value="limited">Limited</option>
+        <option value="p-c">P.C.</option>
+        <option value="professional-corporation">Professional Corporation</option><br>
+    </select><br><br>
 
-        <h2>What is the general purpose your nonprofit?</h2>
-        <p>Choose the category below that best describes your nonprofit's general purpose. If the categories provided do not describe your purpose, please select "Other". Then enter your own description in the box provided. Your answers will help us personalize your state formation documents.</p><br>
+    <button class="back-btn back-btn1" type="button">Back</button>
+    <button class="next-btn next-btn1" type="button">Next</button>
+</div>
 
+<!--!Business Information-->
+<div class="container">
+<h2>Business Information</h2>
+        <p>Choose the proper tax exemption and category that best describes your nonprofit's general purpose. If the categories provided do not describe your purpose, please select "Other". Then enter your own description in the box provided. Your answers will help us personalize your state formation documents.</p><br>
+        
+        <label for="story">Which type of tax exemption do you plan on applying for with the IRS?</label>
+    <select class="drop-down" name="tax-exemption" required>
+        <option value="">select an option</option>
+        <option value="501(c)(3)">501(c)(3)-(most common) Various charitable, non-profit,religious,and educational organization</option>
+        <option value="no-tax-exemption">No Tax Exemption</option>
+        <option value="i-don't-know">I don't know, need help choosing </option>
+        <option value="501(c)(1)">501(c)(1)-Corporations Organized Under Act of Congress (including Federal Credit Unions)</option>
+        <option value="501(c)(2)">501(c)(2)-Title Holding Corporations for Exempt Organization</option>
+        <option value="501(c)(4)">501(c)(4)-Civic Leagues and Social Welfare Organizations and Local Associations of Employees</option>
+        <option value="501(c)(5)">501(c)(5)-Labor, Agricultural and Horticultural Organizations</option>
+        <option value="501(c)(6)">501(c)(6)-Business Leagues, etc.</option>
+        <option value="501(c)(7)">501(c)(7)-Social and Recreation Clubs</option>
+        <option value="501(c)(8)">501(c)(8)-Fraternal Beneficiary Societies</option>
+        <option value="501(c)(9)">501(c)(9)-Voluntary Employees' Beneficiary Associations</option>
+        <option value="501(c)(10)">501(c)(10)-Domestic Fraternal Societies</option>
+        <option value="501(c)(11)">501(c)(11)-Teachers' Retirement Fund Associations</option>
+        <option value="501(c)(12)">501(c)(12)-Local Benevolent Life Insurance Associations</option>
+        <option value="501(c)(13)">501(c)(13)-Cemetery Companies </option>
+        <option value="501(c)(14)">501(c)(14)-State Chartered Credit Unions, Mutual Reserve Funds</option>
+        <option value="501(c)(15)">501(c)(15)-Mutual Insurance Companies or Associations</option>
+        <option value="501(c)(16)">501(c)(16)-Cooperative Organizations to Finance Crop Operations</option>
+        <option value="501(c)(17)">501(c)(17)-Supplemental Unemployment Benefit Trusts</option>
+        <option value="501(c)(18)">501(c)(18)-Employee Funded Pension Trusts (created before June 25, 1959)</option>
+        <option value="501(c)(19)">501(c)(19)-Veterans' Organizations</option>
+        <option value="501(c)(21)">501(c)(21)-Black Lung Benefit Trusts</option>
+        <option value="501(c)(22)">501(c)(22)-Withdrawal Liability Payment Funds</option>
+        <option value="501(c)(25)">501(c)(25)-Title Holding Corporations or Trusts with Multiple Parents</option>
+        <option value="501(c)(26)">501(c)(26)-State-Sponsored High-Risk Health Coverage Organizations</option>
+        <option value="501(c)(27)">501(c)(27)-State-Sponsored Worker's Compensation Reinsurance Organizations</option>
+        <option value="501(c)(28)">501(c)(28)-National Railroad Retirement Investment Trust (45 U.S.C. 231n(j)</option>
+        <option value="501(c)(29)">501(c)(29)-Qualified Nonprofit Health Insurance Issuers</option>
+        <option value="501(d)">501(d)-Religious and Apostolic Associations</option>
+        <option value="501(e)">501(e)-Cooperative Hospital Service Organizations</option>
+        <option value="501(f)">501(f)-Cooperative Service Organizations of Operating Educational Organizations</option>
+        <option value="501(k)">501(k)-Child Care Organizations</option>
+        <option value="521(a)">521(a)-Farmers' Cooperative Associations</option>
+    </select><br><br><br>
 
 
         <label for="business-category">Choose Your Business Category</label>
         <select class="drop-down" name="business-category" required>
             <option value="">select an option</option>
-            <option value="accommodation-food-service">Accommodation/Food Service</option>
-            <option value="rental-leasing">Rental Leasing</option>
-            <option value="warehouse">Warehouse</option>
-            <option value="construction">Construction</option>
-            <option value="finances">Finances</option>
-            <option value="food-services">Food Services</option>
-            <option value="health-care">Health Care</option>
-            <option value="insurance">Insurance</option>
-            <option value="manufacturing">Manufacturing</option>
-            <option value="retail">Retail</option>
-            <option value="real-estate">Real Estate</option>
-            <option value="transportation">Transportation</option>
-            <option value="wholesale-agent-broker">Wholesale/Agent/Broker</option>
-            <option value="wholesale-other">Wholesale/Other</option>
+            <option value="accommodation-food-service">Religious</option>
+            <option value="rental-leasing">Charitable</option>
+            <option value="warehouse">Scientific</option>
+            <option value="construction">Testing for Public Safety</option>
+            <option value="finances">Literary</option>
+            <option value="food-services">Educational</option>
+            <option value="health-care">Preventing Cruelty to Children or Animals</option>
             <option value="other">Other</option>
         </select><br><br><br> 
+        
 
         <label for="story">Business Purpose</label>
         <p><i>Example: Frozen yogurt shop.</i></p>
         <textarea id="story" data-gramm="false" name="story"rows="5" cols="33" required></textarea><br><br>
         <br><br>
 
-        <button class="back-btn back-btn1" type="button">Back</button>
-        <button class="next-btn next-btn1" type="button">Next</button>
-    </div>
+    <button class="back-btn back-btn1" type="button">Back</button>
+    <button class="next-btn next-btn1" type="button">Next</button>
+</div>
 
 <!--!Principal Place of Business-->
     <div class="container">
