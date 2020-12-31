@@ -91,8 +91,14 @@
 
     <label for="company-name">Alternate Company Name</label>
     <input type="text" id="company-name" name="company-name"><br><br>
-    <p>Name must contain a suffix: <br><br><b>Limited Liability Limited Partnership</b> must include Limited Liability Limited Partnership, L.L.L.P or LLLP. <br><br><b>
-    <br><br>
+
+    <label for="designator">Select Your Designator</label>
+    <select class="drop-down" name="designator"required>
+        <option value="">select an option</option>
+        <option value="lllp">LLLP</option>
+        <option value="l.l.l.p">L.L.L.P</option>
+        <option value="limited-liability-limited-partnership">Limited Liability Limited Partnership</option>
+    </select><br><br><br><br>
 
     <button class="back-btn back-btn1" type="button">Back</button>
     <button class="next-btn next-btn1" type="button">Next</button>
