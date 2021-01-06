@@ -54,39 +54,42 @@
         <button href="#"class="start-my-application" type="button">Start My Application</button>
     </div>
 
-<!--!Sole Proprietor Information-->
+<!--!Trust Information-->
     <div class="container">
         <h2>Trust Information</h2>
 
         <label for="trade-name">Name of Trust</label>
         <input type="text" id="trade-name" name="trade-name" required><br><br>
         
-        <label for="Name of Trust">Name of Trust</label>
+        <label for="type-of-trust*">Type of Trust</label>
         <select class="drop-down" required>
             <option value="">--Please Select--</option>
-            <option value="Janaury">J Bankruptcy Estate (Individual)</option>
-            <option value="February">Charitable Lead Annuity Trust</option>
-            <option value="March">Charitable Lead Unitrust</option>
-            <option value="April">Charitable Remainder Annuity Trust</option>
-            <option value="May">Charitable Remainder Unitrust</option>
-            <option value="June">Conservatorship</option>
-            <option value="July">Custodianship</option>
-            <option value="August">Escrow</option>
-            <option value="September">FNMA (Fannie MAE)</option>
-            <option value="September">GNMA (Ginnie MAE)</option>
-            <option value="November">Guardianship</option>
-            <option value="December">Irrevocable Trust</option>
-            <option value="December">Pooled Income Fund</option>
-            <option value="December">Qualified Funeral Trust</option>
-            <option value="December">Receivership</option>
-            <option value="December">Revocable Trust</option>
-            <option value="December">Settlement Fund</option>
-            <option value="December">Trust (All Others)</option>
-    </select><br><br>
+            <option value="bankruptcy-estate">Bankruptcy Estate (Individual)</option>
+            <option value="charitable-lead-annuity-trust">Charitable Lead Annuity Trust</option>
+            <option value="charitable-lead-unitrust">Charitable Lead Unitrust</option>
+            <option value="charitable-remainder-annuity-trust">Charitable Remainder Annuity Trust</option>
+            <option value="charitable-remainder-unitrust">Charitable Remainder Unitrust</option>
+            <option value="conservatorship">Conservatorship</option>
+            <option value="custodianship">Custodianship</option>
+            <option value="escrow">Escrow</option>
+            <option value="FNMA">FNMA (Fannie MAE)</option>
+            <option value="GNMA">GNMA (Ginnie MAE)</option>
+            <option value="guardianship">Guardianship</option>
+            <option value="irrevocable Trust">Irrevocable Trust</option>
+            <option value="pooled-income-fund">Pooled Income Fund</option>
+            <option value="qualified-funeral-trust">Qualified Funeral Trust</option>
+            <option value="receivership">Receivership</option>
+            <option value="revocable-trust">Revocable Trust</option>
+            <option value="settlement-fund">Settlement Fund</option>
+            <option value="trust">Trust (All Others)</option>
+    </select><br><br><br><br>
+
+    <button class="back-btn back-btn1" type="button">Back</button>
+    <button class="next-btn next-btn1" type="button">Next</button><br><br>
 
     </div>
 
-<!--!Personal Information-->
+<!--!Grantor/Creator Information-->
 
     <div class="container">
         <h2>Grantor/Creator Information</h2>
@@ -100,10 +103,11 @@
         <label for="ssn">Social Security Number🔒</label>
         <input id="ssn" id="ssn" type="text" maxlength="9" placeholder="[XXX-XX-XXX]"><br><br>
 
-        <label for="ssn">Social Security Number🔒</label>
+        <label for="ssn"> Re-enter Social Security Number🔒</label>
         <input id="ssn" id="ssn" type="text" maxlength="9" placeholder="[XXX-XX-XXX]"><br><br>
         
-        <button class="next-btn next-btn1" type="button">Next</button>
+        <button class="back-btn back-btn1" type="button">Back</button>
+        <button class="next-btn next-btn1" type="button">Next</button><br><br>
     </div>
 <!--!Trustee Information-->
 <div class="container"> 
@@ -122,9 +126,9 @@
     <button class="next-btn next-btn1" type="button">Next</button><br><br>
 
 </div>
-<!--!Business Address (No P.O Box address)-->
+<!--!Trustee Address (No P.O Box address)-->
 <div class="container">
-    <h2>Trustee Address</h2>
+    <h2>Trustee Address (No P.O Box address)</h2>
             
     <label for="address">Address</label>
     <input type="text" id="address" name="address" required><br><br>
@@ -402,8 +406,8 @@
 
 <!--!Date-->
         <div class="container">
-            <h2> Date Business Acquired</h2>
-            <p>Date the Trust was started or acquired.</p>
+            <h2> Date</h2>
+            <h4>Date Trust Funded</h4>
             <select class="drop-down" required>
                 <option value="">--Select Month--</option>
                 <option value="Janaury">Janaury</option>
@@ -493,8 +497,7 @@
                 <option value="1990">1990</option>
             </select><br><br>
 
-        <h4> Accounting Year End</h4>
-        <p>When will your accounting period end? </p>
+        <h4>Closing Month of Accounting Year</h4>
             <select class="drop-down" required>
                 <option value="">--Select Month--</option>
                 <option value="Janaury">Janaury</option>
