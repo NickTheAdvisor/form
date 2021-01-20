@@ -52,16 +52,20 @@
         <button href="#"class="start-my-application" type="button">Start My Application</button>
     </div>
 
-<!--!Sole Proprietor Information-->
+<!--!S-Corporation Information-->
+
     <div class="container">
-        <h2>S-Corporation</h2>
+        <h2>S-Corporation Information</h2>
 
         <label> Entity is owned by another business?</label><br>
         <input type="radio" name="owned-by-another-business">Yes</input>
-        <input type="radio" name="owned-by-another-business" checked>No</input><br><br><br>
+        <input type="radio" name="owned-by-another-business" required>No</input><br><br><br>
 
         <label for="trade-name">Trade Name / DBA (optional)</label>
-        <input type="text" id="trade-name" name="trade-name" required><br><br>
+        <input type="text" id="trade-name" name="trade-name"><br><br>
+
+        <button class="next-btn next-btn1" type="button">Next</button>
+
     </div>
 
 <!--!Personal Information-->
@@ -76,16 +80,18 @@
         <input type="text" id="last-name" name="last-name"required><br><br>
 
         <label for="ssn">Social Security Number🔒</label>
-        <input id="ssn" id="ssn" type="text" maxlength="9" placeholder="[XXX-XX-XXX]"><br><br>
+        <input id="ssn" id="ssn" type="text" maxlength="9" placeholder="[XXX-XX-XXX]" required><br><br>
 
         <label for="ssn">Verify Social Security Number🔒</label>
-        <input id="ssn" id="ssn" type="text" maxlength="9" placeholder="[XXX-XX-XXX]"><br><br>
+        <input id="ssn" id="ssn" type="text" maxlength="9" placeholder="[XXX-XX-XXX]" required><br><br>
             
         <label for="title">Title</label>
         <p><em>[eg. Owner/Managing Member]</em></p>
         <input type="text" id="title" name="title"required><br><br>
         
-        <button class="next-btn next-btn1" type="button">Next</button>
+    <button class="back-btn back-btn1" type="button">Back</button>
+    <button class="next-btn next-btn1" type="button">Next</button>
+
     </div>
 
 <!--!Business Address (No P.O Box address)-->
