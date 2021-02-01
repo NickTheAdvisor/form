@@ -221,11 +221,14 @@
         <label for="zip">Zip</label>
         <input id="zip" name="zip" type="text" pattern="[0-9]" minlength="5" maxlength="5" required><br><br>
 
-        <label><input id="myCheck" class="myCheck" input type="checkbox"  onclick="myFunction()" required><span class="no-wrap">Mailing address is different?</span></label><br><br><br>
-
-    <!--Mailing  Address (No P.O Box address)-->
-    <div id="div3">
-        <h2>Mailing Address</h2>
+        <label><input id="myCheck" class="myCheck" input type="checkbox"  onclick="myFunction()" required><span class="no-wrap">Mailing address is different?</span></label><br><br><br><br>
+    
+        <button class="back-btn back-btn1" type="button">Back</button>
+        <button class="next-btn next-btn1" type="button">Next</button>
+    </div>
+    <!--Show "Mailing  Address" on next page if they check box above. -->
+    <div class="container">
+        <h2>Mailing  Address (No P.O Box address)</h2>
         <p>Enter the mailing address including the suite number if applicable. The mailing address can be anywhere in the U.S. If you run a home based business, you may enter your home address.</p>
         <label for="address">Address</label>
         <input type="text" id="address" name="address"><br><br>
@@ -292,8 +295,8 @@
                 <option value="WY">Wyoming</option>
             </select><br><br>
         <label for="zip">&nbsp;&nbsp;Zip</label>
-        <input id="zip" name="zip" type="text" pattern="[0-9]" min-length="5" maxlength="5"><br><br>
-    </div>
+        <input id="zip" name="zip" type="text" pattern="[0-9]" min-length="5" maxlength="5"><br><br><br>
+
     
     <button class="back-btn back-btn1" type="button">Back</button>
     <button class="next-btn next-btn1" type="button">Next</button>
@@ -742,6 +745,9 @@
 
     <input type="radio" name="registered-agent"checked onclick="show5();"> Yes! StartABizzy can provide our Registered Agent service.</input><br><br>
     <input type="radio" name="registered-agent" onclick="show6();">We will appoint a different Registered Agent.</input><br><br><br>
+
+<!-- ?----------------------------------------------------------------------------------> 
+<!-- ? If "We will appoint a different Registered Agent" is selected above then the section below will appear-->
 
 <div id="div4">
     <h4>Who will be serving as your Registered Agent?</h4>
