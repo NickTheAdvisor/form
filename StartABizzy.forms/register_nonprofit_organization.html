@@ -857,9 +857,19 @@
     <h4>Do you need a EIN/ Tax ID? (Free and Highly Recommended)</h4>
 
     <input type="radio" name="need-a-EIN" checked>Yes</input>
-    <input type="radio" name="need-a-EIN">No</input>
+    <input type="radio" name="need-a-EIN">No</input><br><br><br>
 
-    <p>We'd be happy to get you a EIN/ Federal Tax ID! To do so, we will need the Social Security Number of the applicant who is filing for the business.</p>
+    <button class="back-btn back-btn1" type="button">Back</button>
+    <button class="next-btn next-btn1" type="button">Next</button><br>
+</div>
+
+<!-- ?----------------------------------------------------------------------------------> 
+<!-- ? If they select yes below then the continuous page below will appear in the next page-->  
+
+<!--!Continuous page for EIN/ Federal Tax ID-->
+<div class="container">
+    <h2>We'd be happy to get you a EIN/ Federal Tax ID!</h2>
+    <p>To do so, we will need the Social Security Number of the applicant who is filing for the business. You Social Security Number will not be shared or saved on our database.</p>
     <h4>Social Security Number🔒</h4>
     <input id="ssn1"  type="text" maxlength="" placeholder="[XXX-XX-XXX]">
     <h4>Verify Social Security Number🔒</h4>
@@ -896,9 +906,7 @@
             <h4 for="previous-federal-tax-id">Previous Federal Tax ID</h4>
             <input type="text" id="previous-federal-tax-id" name="previous-federal-tax-id"><br>
         </div>
-<!-- ?----------------------------------------------------------------------------------> 
 
-<!-- ? If they select yes below then the question that is indented below it will appear-->       
     <h4>Do you already have or expect to hire an employee within 12 months, excluding owners?</h4>
     <input type="radio" name="expect-to-hire" onclick="show4();">Yes</input>
     <input type="radio" name="expect-to-hire"checked onclick="show3();">No</input><br>
@@ -1010,7 +1018,6 @@
         <button class="back-btn back-btn1" type="button">Back</button>
         <button class="next-btn next-btn1" type="button">Next</button><br>
 </div>
-<!-- ?---------------------------------------------------------------------------------->
 
 <!--!Registered Agent-->
 <div class="container">
