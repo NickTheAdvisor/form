@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css"> 
+</head> 
+
+<body>   
+<form id="form" action="/action_page.php" novalidate="novalidate">   
+
+<!--!Charitable Solicitation Registration-->
+
+    <div class="container">
+        <h2>Charitable Solicitation Registration</h2><br>
+
+        <label for="first-name">First name</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+            
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name" name="last-name"required><br><br>
+
+        <label for="email-address">Email Address</label>
+        <input type="text" id="email-address" name="email-address" required><br><br>
+
+        <label for="confirm-email-address">Confirm Email Address</label>
+        <input type="text" id="confirm-email-address" name="confirm-email-address" required><br><br>
+
+        <label for="company-name">Company Name</label>
+        <input type="text" id="company-name" name="company-name" required><br><br>
+
+        <label for="title-position">Title/Position</label>
+        <input type="text" id="title-position" name="title-position" required><br><br>
+
+        <label for="state">State</label>
+        <select class="drop-down" name="state"required>
+            <option value="">select an option</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+        </select><br><br>
+
+        <label for="country">Country</label>
+        <select class="drop-down" name="country" required>
+        <option value="">United States</option>
+        </select><br><br>
+
+        <label for="state">How many states is your nonprofit registered in?</label>
+        <select class="drop-down" required>
+            <option value="">--Select Amount--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="31">32</option>
+            <option value="31">33</option>
+            <option value="31">34</option>
+            <option value="31">35</option>
+            <option value="31">36</option>
+            <option value="31">37</option>
+            <option value="31">38</option>
+            <option value="31">39</option>
+            <option value="31">40</option>
+            <option value="31">41</option>
+            <option value="31">42</option>
+            <option value="31">43</option>
+            <option value="31">44</option>
+            <option value="31">45</option>
+            <option value="31">46</option>
+            <option value="31">47</option>
+            <option value="31">48</option>
+            <option value="31">49</option>
+            <option value="31">50</option>
+            <option value="31">51</option>
+        </select><br><br>
+
+        <label for="story">How can we help?</label>
+        <textarea id="story" data-gramm="false" name="story"rows="5" cols="33"></textarea><br><br>
+
+        <button class="submit-application" type="button">Submit</button>
+        <p style="text-align: center;">By submitting this form you agree to our <br> <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a></p>
+
+    </div>
+
+</form>
+
+
+<!--!script.js-->       
+<script src="js/form.js"></script>
+    </body>
+</html>
